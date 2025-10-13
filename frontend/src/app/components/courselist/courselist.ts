@@ -12,7 +12,7 @@ declare var $: any;
 @Component({
   selector: 'app-courselist',
   templateUrl: './courselist.html',
-  styleUrl: './courselist.css'
+  styleUrls: ['./courselist.css']
 })
 export class Courselist implements OnInit {
 
@@ -35,7 +35,7 @@ export class Courselist implements OnInit {
 
   @ViewChild('alertOne') alertOne: ElementRef | undefined;
 
-  constructor(private _service : ProfessorService, private userService : UserService, private _router : Router) { }
+  constructor(private _service: ProfessorService, private userService : UserService, private _router : Router) { }
   ngOnInit() 
   {
     this.loggedUser = JSON.stringify(sessionStorage.getItem('loggedUser')|| '{}');
@@ -87,7 +87,7 @@ getcoursedetails(coursename : string)
   this.courselist = this.userService.getCourseListByName(coursename);
   this.enrollmentstatus = this.userService.getEnrollmentStatus(coursename,this.loggedUser,this.currRole);
   this.wishliststatus = this.userService.getWishlistStatus(coursename,this.loggedUser);
-  this.enrollmentstatus.subscribe(val=> { this.enrolledStatus = val});
+  this.enrollmentstatus?.subscribe(val=> { this.enrolledStatus = val});
   if(this.enrolledStatus[0] === "enrolled")
   console.log("yes");
   console.log(this.enrolledStatus[0]);
@@ -128,10 +128,10 @@ enrollcourse(course : Course, loggedUser : string, currRole : string)
     $("#enrollsuccess").show();
   },5000);
   this.userService.enrollNewCourse(this.enrollment,loggedUser,currRole).subscribe(
-    data => {
+    (data:any) => {
       console.log("Course enrolled Successfully !!!");
     },
-    error => {
+    (error:any) => {
       console.log("Enrollment Failed !!!");
       console.log(error.error);
     }

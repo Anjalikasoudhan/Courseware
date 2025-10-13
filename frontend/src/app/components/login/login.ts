@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Professor } from 'src/app/models/professor';
 import { User } from 'src/app/models/user';
 import { LoginService } from 'src/app/services/login.service';
-import * as $ from 'jquery';
+import $ from 'jquery';
 
 
 @Component({

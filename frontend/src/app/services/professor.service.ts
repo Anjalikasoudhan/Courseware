@@ -14,7 +14,7 @@ const NAV_URL = environment.apiURL;
 })
 export class ProfessorService{
     
-    constructor(private_http:HttpClient){}
+    constructor(private _http:HttpClient){}
     acceptRequestForProfessorApproval(curremail:string)
 
     {

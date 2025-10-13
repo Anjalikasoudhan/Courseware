@@ -23,12 +23,12 @@ export class Addprofessor implements OnInit {
     }
     addProfessor()
     {
-      this._Service.addProfessorFromRemote(this.professor).subscribe(
-        data=>{
+      this._Service.addProfessor(this.professor).subscribe(
+        (data:any)=>{
           console.log("Professor added successfully");
           this._router.navigate(['/admindashboard']);
         },
-        error =>{
+        (error:any) =>{
           console.log("Process Failed");
           console.log(error.error);
           this.msg = "Professor with "+this.professor.email+" already exists !!!";

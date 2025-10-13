@@ -2,7 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Course } from 'src/app/models/course';
 import { ProfessorService } from 'src/app/services/professor.service';
-import * as $ from 'jquery';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-addcourse',
@@ -37,12 +37,12 @@ export class Addcourse {
   }
   addCourse()
   {
-    this._professorService.addCourse(this,course).subscribe(
-      data=>{
+    this._professorService.addCourse(this.course).subscribe(
+      (data:any)=>{
                 console.log("Course added Successfully !!!");
         this._router.navigate(['/addchapter']);
       },
-      error =>{
+      (error:any) =>{
         console.log("Process Failed !!!");
         console.log(error.error);this.msg ="Course with "+this.course.coursename+"already exists !!!";
       }

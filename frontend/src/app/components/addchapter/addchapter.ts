@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Chapter } from 'src/app/models/chapter';
 import { ProfessorService } from 'src/app/services/professor.service';
-import * as $ from 'jquery';
+import $ from 'jquery';
 import { Course } from 'src/app/models/course';
 
 @Component({
@@ -94,11 +94,11 @@ export class Addchapter implements OnInit {
   addChapters()
   {
     this._service.addNewChapters(this.chapter).subscribe(
-      data => {
+      (data:any) => {
         console.log("chapter added Successfully !!!");
         this._router.navigate(['/professordashboard']);
       },
-      error => {
+      (error:any) => {
         console.log("chapter adding Failed !!!");
         console.log(error.error);
       }

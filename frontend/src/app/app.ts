@@ -3,57 +3,58 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegistrationComponent } from './components/registration/registration.component';
-import { RegistrationsuccessComponent } from './components/registrationsuccess/registrationsuccess.component';
-import { UserdashboardComponent } from './components/userdashboard/userdashboard.component';
-import { ProfessordashboardComponent } from './components/professordashboard/professordashboard.component';
-import { AdmindashboardComponent } from './components/admindashboard/admindashboard.component';
+import { App } from './app';
+import { Login } from './components/login/login';
+import { Registration} from './components/registration/registration';
+import { Registrationsuccess } from './components/registrationsuccess/registrationsuccess';
+import { Userdashboard} from './components/userdashboard/userdashboard';
+import { Professordashboard} from './components/professordashboard/professordashboard';
+import { Admindashboard} from './components/admindashboard/admindashboard';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { UserprofileComponent } from './components/userprofile/userprofile.component';
-import { ProfessorprofileComponent } from './components/professorprofile/professorprofile.component';
-import { AddprofessorComponent } from './components/addprofessor/addprofessor.component';
-import { ApprovalstatusComponent } from './components/approvalstatus/approvalstatus.component';
-import { AddcourseComponent } from './components/addcourse/addcourse.component';
-import { UserlistComponent } from './components/userlist/userlist.component';
-import { ProfessorlistComponent } from './components/professorlist/professorlist.component';
-import { CourselistComponent } from './components/courselist/courselist.component';
+import { Header } from './components/header/header';
+import { Footer} from './components/footer/footer';
+import { Userprofile } from './components/userprofile/userprofile';
+import { Professorprofile } from './components/professorprofile/professorprofile';
+import { Addprofessor } from './components/addprofessor/addprofessor';
+import { Approvalstatus } from './components/approvalstatus/approvalstatus';
+import { Addcourse } from './components/addcourse/addcourse';
+import { Userlist } from './components/userlist/userlist';
+import { Professorlist } from './components/professorlist/professorlist';
+import { Courselist} from './components/courselist/courselist';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { YouTubePlayerModule } from '@angular/youtube-player';
-import { FullcourseComponent } from './components/fullcourse/fullcourse.component';
-import { AddchapterComponent } from './components/addchapter/addchapter.component';
-import { MycoursesComponent } from './components/mycourses/mycourses.component';
-import { MywishlistComponent } from './components/mywishlist/mywishlist.component';
-import { WelcomepageComponent } from './components/welcomepage/welcomepage.component';
+import { Fullcourse } from './components/fullcourse/fullcourse';
+import { Addchapter } from './components/addchapter/addchapter';
+import { Mycourses } from './components/mycourses/mycourses';
+import { Mywishlist } from './components/mywishlist/mywishlist';
+import { Welcomepage } from './components/welcomepage/welcomepage';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    RegistrationComponent,
-    RegistrationsuccessComponent,
-    UserdashboardComponent,
-    ProfessordashboardComponent,
-    AdmindashboardComponent,
-    HeaderComponent,
-    FooterComponent,
-    UserprofileComponent,
-    ProfessorprofileComponent,
-    AddprofessorComponent,
-    ApprovalstatusComponent,
-    AddcourseComponent,
-    UserlistComponent,
-    ProfessorlistComponent,
-    CourselistComponent,
-    FullcourseComponent,
-    AddchapterComponent,
-    MycoursesComponent,
-    MywishlistComponent,
-    WelcomepageComponent
+    App,
+    Login,
+    Registration,
+    Registrationsuccess,
+    Userdashboard,
+    Professordashboard,
+    Admindashboard,
+    Header,
+    Footer,
+    Userprofile,
+    Professorprofile,
+    Addprofessor,
+    Approvalstatus,
+    Addcourse,
+    Userlist,
+    Professorlist,
+    Courselist,
+    Fullcourse,
+    Addchapter,
+    Mycourses,
+    Mywishlist,
+    Welcomepage
   ],
   imports: [
     BrowserModule,
@@ -66,6 +67,6 @@ import { WelcomepageComponent } from './components/welcomepage/welcomepage.compo
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent, RegistrationComponent]
+  bootstrap: [App, Registration]
 })
 export class AppModule { }

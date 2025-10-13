@@ -13,7 +13,7 @@ const NAV_URL = environment.apiURL;
   providedIn: 'root'
 })
 export class UserService{
-    constructor(private_http:HttpClient) {}
+    constructor(private _http:HttpClient) {}
 
     getAllUsers():Observable<any>
     {

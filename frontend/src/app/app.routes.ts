@@ -1,49 +1,49 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddchapterComponent } from './components/addchapter/addchapter.component';
-import { AddcourseComponent } from './components/addcourse/addcourse.component';
-import { AddprofessorComponent } from './components/addprofessor/addprofessor.component';
-import { AdmindashboardComponent } from './components/admindashboard/admindashboard.component';
-import { ApprovalstatusComponent } from './components/approvalstatus/approvalstatus.component';
-import { CourselistComponent } from './components/courselist/courselist.component';
-import { FullcourseComponent } from './components/fullcourse/fullcourse.component';
-import { LoginComponent } from './components/login/login.component';
-import { MycoursesComponent } from './components/mycourses/mycourses.component';
-import { MywishlistComponent } from './components/mywishlist/mywishlist.component';
-import { ProfessordashboardComponent } from './components/professordashboard/professordashboard.component';
-import { ProfessorlistComponent } from './components/professorlist/professorlist.component';
-import { ProfessorprofileComponent } from './components/professorprofile/professorprofile.component';
-import { RegistrationComponent } from './components/registration/registration.component';
-import { RegistrationsuccessComponent } from './components/registrationsuccess/registrationsuccess.component';
-import { UserdashboardComponent } from './components/userdashboard/userdashboard.component';
-import { UserlistComponent } from './components/userlist/userlist.component';
-import { UserprofileComponent } from './components/userprofile/userprofile.component';
-import { WelcomepageComponent } from './components/welcomepage/welcomepage.component';
+import { Addchapter } from './components/addchapter/addchapter';
+import { Addcourse } from './components/addcourse/addcourse';
+import { Addprofessor } from './components/addprofessor/addprofessor';
+import { Admindashboard } from './components/admindashboard/admindashboard';
+import { Approvalstatus } from './components/approvalstatus/approvalstatus';
+import { Courselist} from './components/courselist/courselist';
+import { Fullcourse } from './components/fullcourse/fullcourse';
+import { Login} from './components/login/login';
+import { Mycourses } from './components/mycourses/mycourses';
+import { Mywishlist } from './components/mywishlist/Mywishlist';
+import { Professordashboard } from './components/professordashboard/Professordashboard';
+import { Professorlist } from './components/professorlist/professorlist';
+import { Professorprofile } from './components/professorprofile/professorprofile';
+import { Registration } from './components/registration/registration';
+import { Registrationsuccess} from './components/registrationsuccess/Registrationsuccess';
+import { Userdashboard } from './components/userdashboard/userdashboard';
+import { Userlist } from './components/userlist/userlist.';
+import { Userprofile } from './components/userprofile/userprofile.';
+import { Welcomepage } from './components/welcomepage/Welcomepage';
 import { AdminGuard } from './guards/admin.guard';
 import { ProfessorGuard } from './guards/professor.guard';
 import { RouterGuard } from './guards/router.guard';
 import { UserGuard } from './guards/user.guard';
 
 const routes: Routes = [
-  {path:'',component:WelcomepageComponent},
-  {path:'login',component:LoginComponent},
-  {path:'registration',component:RegistrationComponent},
-  {path:'registrationsuccess',component:RegistrationsuccessComponent},
-  {path:'admindashboard',component:AdmindashboardComponent,canActivate:[AdminGuard]},
-  {path:'userdashboard',component:UserdashboardComponent,canActivate:[UserGuard]},
-  {path:'professordashboard',component:ProfessordashboardComponent,canActivate:[ProfessorGuard]},
-  {path:'addProfessor',component:AddprofessorComponent,canActivate:[AdminGuard]},
-  {path:'addCourse',component:AddcourseComponent,canActivate:[RouterGuard]},
-  {path:'approveprofessor',component:ApprovalstatusComponent,canActivate:[RouterGuard]},
-  {path:'professorlist',component:ProfessorlistComponent,canActivate:[RouterGuard]},
-  {path:'userlist',component:UserlistComponent,canActivate:[RouterGuard]},
-  {path:'courselist',component:CourselistComponent,canActivate:[RouterGuard]},
-  {path:'addchapter',component:AddchapterComponent,canActivate:[RouterGuard]},
-  {path:'fullcourse/:coursename',component:FullcourseComponent,canActivate:[RouterGuard]},
-  {path:'editprofessorprofile',component:ProfessorprofileComponent,canActivate:[ProfessorGuard]},
-  {path:'edituserprofile',component:UserprofileComponent,canActivate:[UserGuard]},
-  {path:'mywishlist',component:MywishlistComponent,canActivate:[RouterGuard]},
-  {path:'mycourses',component:MycoursesComponent,canActivate:[RouterGuard]}
+  {path:'',component:Welcomepage},
+  {path:'login',component:Login},
+  {path:'registration',component:Registration},
+  {path:'registrationsuccess',component:Registrationsuccess},
+  {path:'admindashboard',component:Admindashboard,canActivate:[AdminGuard]},
+  {path:'userdashboard',component:Userdashboard,canActivate:[UserGuard]},
+  {path:'professordashboard',component:Professordashboard,canActivate:[ProfessorGuard]},
+  {path:'addProfessor',component:Addprofessor,canActivate:[AdminGuard]},
+  {path:'addCourse',component:Addcourse,canActivate:[RouterGuard]},
+  {path:'approveprofessor',component:Approvalstatus,canActivate:[RouterGuard]},
+  {path:'professorlist',component:Professorlist,canActivate:[RouterGuard]},
+  {path:'userlist',component:Userlist,canActivate:[RouterGuard]},
+  {path:'courselist',component:Courselist,canActivate:[RouterGuard]},
+  {path:'addchapter',component:Addchapter,canActivate:[RouterGuard]},
+  {path:'fullcourse/:coursename',component:Fullcourse,canActivate:[RouterGuard]},
+  {path:'editprofessorprofile',component:Professorprofile,canActivate:[ProfessorGuard]},
+  {path:'edituserprofile',component:Userprofile,canActivate:[UserGuard]},
+  {path:'mywishlist',component:Mywishlist,canActivate:[RouterGuard]},
+  {path:'mycourses',component:Mycourses,canActivate:[RouterGuard]}
 ];
 
 @NgModule({

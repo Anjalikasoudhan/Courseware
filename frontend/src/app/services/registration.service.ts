@@ -15,7 +15,7 @@ export class RegistrationService{
     user=new User();
     professor=new Professor();
 
-    constructor(private_http:HttpClient){}
+    constructor(private _http:HttpClient){}
 
     public registerUserFromRemote(user:User):Observable<any>
     {

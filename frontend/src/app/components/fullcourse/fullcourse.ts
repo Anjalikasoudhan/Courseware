@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Chapter } from 'src/app/models/chapter';
 import { UserService } from 'src/app/services/user.service';
-import * as $ from 'jquery';
+import $ from 'jquery';
 import { Course } from 'src/app/models/course';
 
 declare var require: any;
@@ -158,8 +158,6 @@ export class Fullcourse implements OnInit {
 
   openDoc() {
     const pdfUrl = './assets/Introduction to Spring MVC.pdf';
-    window.open(pdfUrl + '#page=1', '_blank', '', true);
+    window.open(pdfUrl + '#page=1', '_blank');
   }
-
-
 }
