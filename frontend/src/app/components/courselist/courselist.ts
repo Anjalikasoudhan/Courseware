@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 //import * as $ from 'jquery';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Observable } from 'rxjs';
@@ -8,11 +8,16 @@ import { Enrollment } from 'src/app/models/enrollment';
 import { Wishlist } from 'src/app/models/wishlist';
 import { ProfessorService } from 'src/app/services/professor.service';
 import { UserService } from 'src/app/services/user.service';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 declare var $: any;
 @Component({
   selector: 'app-courselist',
   templateUrl: './courselist.html',
-  styleUrls: ['./courselist.css']
+  styleUrls: ['./courselist.css'],
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule]
 })
 export class Courselist implements OnInit {
 
@@ -45,7 +50,7 @@ export class Courselist implements OnInit {
     this.currRole = this.currRole.replace(/"/g, '');
 
     this.youtubecourselist = this.userService.getYoutubeCourseList();
-    this.websitecourselist = this.userService.getWebsiteCourseList();
+    this.websitecourselist = this.userService.getwebsiteCourseList();
 
     const target = 'https://www.youtube.com/iframe_api'
 

@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as $ from 'jquery';
+import { RouterModule } from '@angular/router';
+import $ from 'jquery';
+import { Footer } from "../footer/footer";
 @Component({
   selector: 'app-welcomepage',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule,Footer],
   templateUrl: './welcomepage.html',
-  styleUrl: './welcomepage.css',
+  styleUrls: ['./welcomepage.css'],
 })
 export class Welcomepage implements OnInit {
   constructor(

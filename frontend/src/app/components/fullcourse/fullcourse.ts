@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Chapter } from 'src/app/models/chapter';
 import { UserService } from 'src/app/services/user.service';
 import $ from 'jquery';
 import { Course } from 'src/app/models/course';
+import { Footer } from "../footer/footer";
+import { Header } from "../header/header";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 declare var require: any;
 const FileSaver = require('file-saver');
@@ -12,7 +16,8 @@ const FileSaver = require('file-saver');
 @Component({
   selector: 'app-fullcourse',
   templateUrl: './fullcourse.html',
-  styleUrl: './fullcourse.css'
+  styleUrl: './fullcourse.css',
+  imports: [Footer, Header,FormsModule,CommonModule,RouterModule]
 })
 export class Fullcourse implements OnInit {
   

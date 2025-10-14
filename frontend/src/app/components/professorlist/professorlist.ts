@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Professor } from 'src/app/models/professor';
 import { ProfessorService } from 'src/app/services/professor.service';
+import { Footer } from '../footer/footer';
+import { Header } from '../header/header';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 @Component({
-  selector: 'app-faculty-list',
-  imports: [],
-  templateUrl: './faculty-list.html',
-  styleUrl: './faculty-list.css'
+  selector: 'app-professorlist',
+  imports: [Footer, Header,FormsModule,CommonModule,RouterModule],
+  templateUrl: './professorlist.html',
+  styleUrl: './professorlist.css'
 })
-export class FacultyList {
-
-  implements OnInit {
-
+export class Professorlist implements OnInit {
   loggedUser = '';
   currRole = '';
   professorlist : Observable<Professor[]> | undefined;
@@ -26,6 +29,7 @@ export class FacultyList {
     this.currRole = JSON.stringify(sessionStorage.getItem('ROLE')|| '{}'); 
     this.currRole = this.currRole.replace(/"/g, '');
 
-    this.professorlist = this._service.getProfessorList()
+    this.professorlist = this._service.getProfessorList();
   }
+
 }

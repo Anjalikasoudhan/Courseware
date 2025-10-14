@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms'  
-import { Router } from '@angular/router';
+import { FormGroup, FormControl, FormArray, FormBuilder, FormsModule } from '@angular/forms'  
+import { Router, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Chapter } from 'src/app/models/chapter';
 import { ProfessorService } from 'src/app/services/professor.service';
 import $ from 'jquery';
 import { Course } from 'src/app/models/course';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-addchapter',
   templateUrl: './addchapter.html',
-  styleUrl: './addchapter.css'
+  styleUrl: './addchapter.css',
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule]
 })
 export class Addchapter implements OnInit {
   chapter = new Chapter();

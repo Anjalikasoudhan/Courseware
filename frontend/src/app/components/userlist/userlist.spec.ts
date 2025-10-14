@@ -11,7 +11,8 @@ describe('Userlist', () => {
       imports: [Userlist]
     })
     .compileComponents();
-
+  });
+  beforeEach(() => {
     fixture = TestBed.createComponent(Userlist);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,13 +1,18 @@
 import { Component,OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { Course } from 'src/app/models/course';
 import { ProfessorService } from 'src/app/services/professor.service';
 import $ from 'jquery';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-addcourse',
   templateUrl: './addcourse.html',
-  styleUrl: './addcourse.css'
+  styleUrl: './addcourse.css',
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule],
 })
 export class Addcourse {
 

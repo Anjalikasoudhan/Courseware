@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { App } from './app';
 import { Login } from './components/login/login';
 import { Registration} from './components/registration/registration';
@@ -20,7 +20,6 @@ import { Approvalstatus } from './components/approvalstatus/approvalstatus';
 import { Addcourse } from './components/addcourse/addcourse';
 import { Userlist } from './components/userlist/userlist';
 import { Professorlist } from './components/professorlist/professorlist';
-import { Courselist} from './components/courselist/courselist';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -29,6 +28,9 @@ import { Addchapter } from './components/addchapter/addchapter';
 import { Mycourses } from './components/mycourses/mycourses';
 import { Mywishlist } from './components/mywishlist/mywishlist';
 import { Welcomepage } from './components/welcomepage/welcomepage';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Courselist} from './components/courselist/courselist';
+import { AppRoutingModule } from './app.routes';
 
 
 @NgModule({
@@ -64,9 +66,12 @@ import { Welcomepage } from './components/welcomepage/welcomepage';
     AppRoutingModule,
     CarouselModule,
     YouTubePlayerModule,
+    BrowserAnimationsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [App, Registration]
 })
 export class AppModule { }
+
+export { App };

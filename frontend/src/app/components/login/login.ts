@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { Professor } from 'src/app/models/professor';
 import { User } from 'src/app/models/user';
 import { LoginService } from 'src/app/services/login.service';
 import $ from 'jquery';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.html',
-  styleUrl: './login.css'
+  styleUrl: './login.css',
+  imports: [FormsModule,CommonModule,RouterModule]
 })
 export class Login implements OnInit 
 {

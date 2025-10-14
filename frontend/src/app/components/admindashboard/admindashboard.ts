@@ -1,13 +1,18 @@
 import { Component,OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AdminService } from 'src/app/services/admin.service';
 import { UserService } from 'src/app/services/user.service';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-admindashboard',
   templateUrl: './admindashboard.html',
-  styleUrl: './admindashboard.css'
+  styleUrl: './admindashboard.css',
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule],
 })
 export class Admindashboard implements OnInit {
     name = 'admin';

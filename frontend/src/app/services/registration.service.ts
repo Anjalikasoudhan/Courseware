@@ -23,6 +23,6 @@ export class RegistrationService{
     }
     public registerProfessorFromRemote(Professor:Professor):Observable<any>
     {
-        return this._http.post<any>(`${NAV_URL}/registerprofessor`,professor)
+        return this._http.post<any>(`${NAV_URL}/registerprofessor`,this.professor)
     }
 }

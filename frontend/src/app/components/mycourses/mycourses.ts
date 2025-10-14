@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Observable } from 'rxjs';
 import { Enrollment } from 'src/app/models/enrollment';
 import { UserService } from 'src/app/services/user.service';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-mycourses',
   templateUrl: './mycourses.html',
-  styleUrl: './mycourses.css'
+  styleUrl: './mycourses.css',
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule]
 })
 export class Mycourses implements OnInit {
   myenrollments : Observable<Enrollment[]> | undefined;

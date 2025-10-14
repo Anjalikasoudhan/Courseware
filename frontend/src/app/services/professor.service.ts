@@ -3,8 +3,8 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from 'rxjs';
 import{environment} from 'src/environments/environment';
-import{Chapter} from '..models/Chapter';
-import{Course} from '..models/course';
+import{Chapter} from '../models/chapter';
+import{Course} from '../models/course';
 
 const NAV_URL = environment.apiURL;
 
@@ -48,7 +48,7 @@ export class ProfessorService{
    addCourse(course:Course):Observable<any>
 
     {
-        return this._http.post<any>(`${NAV_URL}/addCourse`,course;
+        return this._http.post<any>(`${NAV_URL}/addCourse`,course);
     }
     getProfessorListByEmail(email:string):Observable<any>
 
@@ -68,7 +68,7 @@ export class ProfessorService{
     UpdateUserProfile(professor:any):Observable<any>
 
     {
-        return this._http.put<any>(`${NAV_URL}/updateprofessor/`+professor);
+        return this._http.put<any>(`${NAV_URL}/updateprofessor`, professor);
     }
      getCourseListNames():Observable<any>
 

@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AdminService } from 'src/app/services/admin.service';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-userdashboard',
-  imports: [],
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule],
   templateUrl: './userdashboard.html',
   styleUrl: './userdashboard.css',
 })

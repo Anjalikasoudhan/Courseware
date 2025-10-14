@@ -9,22 +9,22 @@ import { Courselist} from './components/courselist/courselist';
 import { Fullcourse } from './components/fullcourse/fullcourse';
 import { Login} from './components/login/login';
 import { Mycourses } from './components/mycourses/mycourses';
-import { Mywishlist } from './components/mywishlist/Mywishlist';
-import { Professordashboard } from './components/professordashboard/Professordashboard';
+import { Mywishlist } from './components/mywishlist/mywishlist';
+import { Professordashboard } from './components/professordashboard/professordashboard';
 import { Professorlist } from './components/professorlist/professorlist';
 import { Professorprofile } from './components/professorprofile/professorprofile';
 import { Registration } from './components/registration/registration';
-import { Registrationsuccess} from './components/registrationsuccess/Registrationsuccess';
+import { Registrationsuccess} from './components/registrationsuccess/registrationsuccess';
 import { Userdashboard } from './components/userdashboard/userdashboard';
-import { Userlist } from './components/userlist/userlist.';
-import { Userprofile } from './components/userprofile/userprofile.';
-import { Welcomepage } from './components/welcomepage/Welcomepage';
+import { Userlist } from './components/userlist/userlist';
+import { Userprofile } from './components/userprofile/userprofile';
+import { Welcomepage } from './components/welcomepage/welcomepage';
 import { AdminGuard } from './guards/admin.guard';
 import { ProfessorGuard } from './guards/professor.guard';
 import { RouterGuard } from './guards/router.guard';
 import { UserGuard } from './guards/user.guard';
 
-const routes: Routes = [
+export const routes: Routes = [
   {path:'',component:Welcomepage},
   {path:'login',component:Login},
   {path:'registration',component:Registration},

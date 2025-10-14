@@ -16,8 +16,8 @@
             >
           <!--<small class="text-danger" [class.d-none]="email.valid || email.untouched"><b>required field</b></small>-->
           <div *ngIf="email.errors && email.invalid && email.touched">
-            <small class="text-danger" *ngIf="email.errors.required"><b>required field</b></small>
-            <small class="text-danger" *ngIf="email.errors.pattern"><b>Invalid email Id</b></small>
+            <small class="text-danger" *ngIf="email.errors['required']"><b>required field</b></small>
+            <small class="text-danger" *ngIf="email.errors['pattern']"><b>Invalid email Id</b></small>
           </div>
           </div>
     
@@ -28,7 +28,7 @@
             [class.is-invalid]="password.invalid && password.touched"
             >
             <div *ngIf="password.errors && password.invalid && password.touched">
-              <small class="text-danger" *ngIf="password.errors.required"><b>required field</b></small>
+              <small class="text-danger" *ngIf="password.errors['required']"><b>required field</b></small>
             </div>
             <small style="color: gray; font-size: 10px;">atleast one uppercase, numeric digit, lowercase, special character, length of 6-20</small>
           </div>
@@ -64,8 +64,8 @@
                  >
                <!--<small class="text-danger" [class.d-none]="professoremail.valid || professoremail.untouched"><b>required field</b></small>-->
                <div *ngIf="professoremail.errors && professoremail.invalid && professoremail.touched">
-                 <small class="text-danger" *ngIf="professoremail.errors.required"><b>required field</b></small>
-                 <small class="text-danger" *ngIf="professoremail.errors.pattern"><b>Invalid email Id</b></small>
+                 <small class="text-danger" *ngIf="professoremail.errors['required']"><b>required field</b></small>
+                 <small class="text-danger" *ngIf="professoremail.errors['pattern']"><b>Invalid email Id</b></small>
                </div>
                </div>
          
@@ -76,7 +76,7 @@
                  [class.is-invalid]="professorpassword.invalid && professorpassword.touched"
                  >
                  <div *ngIf="professorpassword.errors && professorpassword.invalid && professorpassword.touched">
-                   <small class="text-danger" *ngIf="professorpassword.errors.required"><b>required field</b></small>
+                   <small class="text-danger" *ngIf="professorpassword.errors['required']"><b>required field</b></small>
                  </div>
                  <small style="color: gray; font-size: 10px;">atleast one uppercase, numeric digit, lowercase, special character, length of 6-20</small>
                </div>
@@ -112,8 +112,8 @@
             >
           <!--<small class="text-danger" [class.d-none]="email.valid || email.untouched"><b>required field</b></small>-->
           <div *ngIf="adminemail.errors && adminemail.invalid && adminemail.touched">
-            <small class="text-danger" *ngIf="adminemail.errors.required"><b>required field</b></small>
-            <small class="text-danger" *ngIf="adminemail.errors.pattern"><b>Invalid email Id</b></small>
+            <small class="text-danger" *ngIf="adminemail.errors['required']"><b>required field</b></small>
+            <small class="text-danger" *ngIf="adminemail.errors['pattern']"><b>Invalid email Id</b></small>
           </div>
           </div>
     
@@ -124,7 +124,7 @@
             [class.is-invalid]="adminpassword.invalid && adminpassword.touched"
             >
             <div *ngIf="adminpassword.errors && adminpassword.invalid && adminpassword.touched">
-              <small class="text-danger" *ngIf="adminpassword.errors.required"><b>required field</b></small>
+              <small class="text-danger" *ngIf="adminpassword.errors['required']"><b>required field</b></small>
             </div>
             <small style="color: gray; font-size: 10px;">Only the admin knows his/her correct email address & password</small>
           </div>

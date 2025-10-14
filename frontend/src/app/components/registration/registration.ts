@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 import { Professor } from 'src/app/models/professor';
 import { User } from 'src/app/models/user';
 import { ProfessorService } from 'src/app/services/professor.service';
 import { RegistrationService } from 'src/app/services/registration.service';
 @Component({
   selector: 'app-registration',
-  imports: [],
+  imports: [FormsModule,CommonModule,RouterModule],
   templateUrl: './registration.html',
   styleUrl: './registration.css',
 })

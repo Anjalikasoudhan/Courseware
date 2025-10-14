@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Welcomepage } from './welcomepage';
+import { before } from 'node:test';
 
 describe('Welcomepage', () => {
   let component: Welcomepage;
@@ -11,7 +12,8 @@ describe('Welcomepage', () => {
       imports: [Welcomepage]
     })
     .compileComponents();
-
+  });
+beforeEach(() => {
     fixture = TestBed.createComponent(Welcomepage);
     component = fixture.componentInstance;
     fixture.detectChanges();

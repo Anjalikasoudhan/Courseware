@@ -11,7 +11,9 @@ describe('Mywishlist', () => {
       imports: [Mywishlist]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(Mywishlist);
     component = fixture.componentInstance;
     fixture.detectChanges();

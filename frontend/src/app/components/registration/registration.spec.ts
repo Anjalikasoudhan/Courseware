@@ -11,7 +11,8 @@ describe('Registration', () => {
       imports: [Registration]
     })
     .compileComponents();
-
+  });
+  beforeEach(() => {
     fixture = TestBed.createComponent(Registration);
     component = fixture.componentInstance;
     fixture.detectChanges();

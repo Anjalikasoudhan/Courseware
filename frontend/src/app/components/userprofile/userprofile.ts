@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
+import { Footer } from "../footer/footer";
+import { Header } from "../header/header";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-userprofile',
-  imports: [],
+  standalone: true,
+  imports: [Footer, Header,FormsModule,CommonModule],
   templateUrl: './userprofile.html',
-  styleUrl: './userprofile.css'
+  styleUrls: ['./userprofile.css']
 })
 export class Userprofile implements OnInit {
   profileDetails: Observable<User[]> | undefined;

@@ -3,12 +3,19 @@ import { Observable } from 'rxjs';
 import { Professor } from 'src/app/models/professor';
 import { ProfessorService } from 'src/app/services/professor.service';
 import $ from 'jquery';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { Router } from 'express';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-approvalstatus',
   templateUrl: './approvalstatus.html',
-  styleUrl: './approvalstatus.css'
+  styleUrl: './approvalstatus.css',
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule]
 })
 export class Approvalstatus {
   currRole = '';

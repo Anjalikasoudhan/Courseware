@@ -1,7 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
-import { AppComponent } from './app/app.component';
+import { App } from './app/app';
 import { routes } from './app/app.routes';
 import { environment } from './environments/environment';
 
@@ -10,7 +10,7 @@ if (environment.production) {
   console.log('Running in production mode');
 }
 
-bootstrapApplication(AppComponent, {
+bootstrapApplication(App, {
   providers: [
     provideRouter(routes),
     provideHttpClient()

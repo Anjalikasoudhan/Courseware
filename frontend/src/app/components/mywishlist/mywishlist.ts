@@ -1,11 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Wishlist } from 'src/app/models/wishlist';
 import { UserService } from 'src/app/services/user.service';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
 
 @Component({
   selector: 'app-mywishlist',
+  imports: [FormsModule, CommonModule, RouterModule, Header, Footer],
   templateUrl: './mywishlist.html',
   styleUrls: ['./mywishlist.css'],
 })

@@ -1,16 +1,22 @@
 import { Component,OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { Professor } from 'src/app/models/professor';
 import { User } from 'src/app/models/user';
 import { AdminService } from 'src/app/services/admin.service';
 import { ProfessorService } from 'src/app/services/professor.service';
 import { RegistrationService } from 'src/app/services/registration.service';
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-addprofessor',
   templateUrl: './addprofessor.html',
-  styleUrl: './addprofessor.css'
+  styleUrl: './addprofessor.css',
+  imports: [Header, Footer,FormsModule,CommonModule,RouterModule],
+  standalone: true
 })
 export class Addprofessor implements OnInit {
  
