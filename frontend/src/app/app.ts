@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import { isStandalone, NgModule } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 
-import { App } from './app';
+import {Component } from '@angular/core';
 import { Login } from './components/login/login';
 import { Registration} from './components/registration/registration';
 import { Registrationsuccess } from './components/registrationsuccess/registrationsuccess';
@@ -20,7 +20,7 @@ import { Approvalstatus } from './components/approvalstatus/approvalstatus';
 import { Addcourse } from './components/addcourse/addcourse';
 import { Userlist } from './components/userlist/userlist';
 import { Professorlist } from './components/professorlist/professorlist';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+//import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { Fullcourse } from './components/fullcourse/fullcourse';
@@ -54,8 +54,8 @@ import { AppRoutingModule } from './app.routes';
     Courselist,
     Fullcourse,
     Addchapter,
-    Mycourses,
     Mywishlist,
+    Mycourses,
     Welcomepage
   ],
   imports: [
@@ -67,11 +67,12 @@ import { AppRoutingModule } from './app.routes';
     CarouselModule,
     YouTubePlayerModule,
     BrowserAnimationsModule,
-    MDBBootstrapModule.forRoot()
+    //MDBBootstrapModule.forRoot()
   ],
   providers: [],
-  bootstrap: [App, Registration]
+  bootstrap: [App, Registration],
+ 
 })
 export class AppModule { }
 
-export { App };
+
