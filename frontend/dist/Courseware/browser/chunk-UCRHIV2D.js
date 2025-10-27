@@ -1,0 +1,1 @@
+import{Aa as s,Ba as i,Ca as n,Oa as r,ta as o}from"./chunk-JOUATK55.js";var c=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-courselist"]],decls:2,vars:0,template:function(e,m){e&1&&(s(0,"p"),n(1,"courselist works!"),i())},dependencies:[r],encapsulation:2})};export{c as Courselist};

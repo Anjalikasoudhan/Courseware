@@ -1,0 +1,1 @@
+import{Aa as t,Ba as r,Ca as n,Oa as d,ta as s}from"./chunk-JOUATK55.js";var p=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=s({type:o,selectors:[["app-addprofessor"]],decls:2,vars:0,template:function(e,i){e&1&&(t(0,"p"),n(1,"addprofessor works!"),r())},dependencies:[d],encapsulation:2})};export{p as Addprofessor};

@@ -1,0 +1,1 @@
+import{Aa as r,Ba as a,Ca as t,Oa as n,ta as s}from"./chunk-JOUATK55.js";var d=class e{static \u0275fac=function(o){return new(o||e)};static \u0275cmp=s({type:e,selectors:[["app-professordashboard"]],decls:2,vars:0,template:function(o,i){o&1&&(r(0,"p"),t(1,"professordashboard works!"),a())},dependencies:[n],encapsulation:2})};export{d as Professordashboard};

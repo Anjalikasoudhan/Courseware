@@ -1,0 +1,1 @@
+import{Aa as n,Ba as d,Ca as t,Oa as i,ta as o}from"./chunk-JOUATK55.js";var m=class a{static \u0275fac=function(e){return new(e||a)};static \u0275cmp=o({type:a,selectors:[["app-admindashboard"]],decls:2,vars:0,template:function(e,r){e&1&&(n(0,"p"),t(1,"admindashboard works!"),d())},dependencies:[i],encapsulation:2})};export{m as Admindashboard};

@@ -1,0 +1,1 @@
+import{Aa as t,Ba as r,Ca as i,Oa as n,ta as s}from"./chunk-JOUATK55.js";var p=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=s({type:o,selectors:[["app-professorlist"]],decls:2,vars:0,template:function(e,m){e&1&&(t(0,"p"),i(1,"professorlist works!"),r())},dependencies:[n],encapsulation:2})};export{p as Professorlist};

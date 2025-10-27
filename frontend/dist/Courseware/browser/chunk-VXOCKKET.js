@@ -1,0 +1,1 @@
+import{Aa as a,Ba as t,Ca as r,Oa as n,ta as s}from"./chunk-JOUATK55.js";var d=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=s({type:o,selectors:[["app-userdashboard"]],decls:2,vars:0,template:function(e,m){e&1&&(a(0,"p"),r(1,"userdashboard works!"),t())},dependencies:[n],encapsulation:2})};export{d as Userdashboard};

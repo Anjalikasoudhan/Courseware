@@ -1,0 +1,1 @@
+import{Aa as o,Ba as n,Ca as d,Oa as p,ta as a}from"./chunk-JOUATK55.js";var c=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["app-addchapter"]],decls:2,vars:0,template:function(e,i){e&1&&(o(0,"p"),d(1,"addchapter works!"),n())},dependencies:[p],encapsulation:2})};export{c as Addchapter};

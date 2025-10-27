@@ -1,0 +1,1 @@
+import{Aa as i,Ba as n,Ca as r,Oa as s,ta as o}from"./chunk-JOUATK55.js";var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-registration"]],decls:2,vars:0,template:function(e,p){e&1&&(i(0,"p"),r(1,"registration works!"),n())},dependencies:[s],encapsulation:2})};export{a as Registration};

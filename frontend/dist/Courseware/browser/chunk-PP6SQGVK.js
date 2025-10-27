@@ -1,0 +1,1 @@
+import{Aa as t,Ba as i,Ca as m,Oa as s,ta as n}from"./chunk-JOUATK55.js";var p=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=n({type:o,selectors:[["app-login"]],decls:2,vars:0,template:function(e,l){e&1&&(t(0,"p"),m(1,"login works!"),i())},dependencies:[s],encapsulation:2})};export{p as Login};

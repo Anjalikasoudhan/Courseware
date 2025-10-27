@@ -1,0 +1,1 @@
+import{Aa as o,Ba as i,Ca as n,Oa as r,ta as s}from"./chunk-JOUATK55.js";var l=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=s({type:t,selectors:[["app-userlist"]],decls:2,vars:0,template:function(e,p){e&1&&(o(0,"p"),n(1,"userlist works!"),i())},dependencies:[r],encapsulation:2})};export{l as Userlist};

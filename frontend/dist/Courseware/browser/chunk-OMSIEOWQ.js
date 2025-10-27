@@ -1,0 +1,1 @@
+import{Aa as l,Ba as n,Ca as s,Oa as c,ta as t}from"./chunk-JOUATK55.js";var r=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-fullcourse"]],decls:2,vars:0,template:function(e,i){e&1&&(l(0,"p"),s(1,"fullcourse works!"),n())},dependencies:[c],encapsulation:2})};export{r as Fullcourse};

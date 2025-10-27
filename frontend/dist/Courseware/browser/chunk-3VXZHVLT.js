@@ -1,0 +1,1 @@
+import{Aa as s,Ba as o,Ca as n,Oa as m,ta as i}from"./chunk-JOUATK55.js";var l=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=i({type:t,selectors:[["app-mywishlist"]],decls:2,vars:0,template:function(e,a){e&1&&(s(0,"p"),n(1,"mywishlist works!"),o())},dependencies:[m],encapsulation:2})};export{l as Mywishlist};

@@ -1,0 +1,1 @@
+import{Aa as t,Ba as n,Ca as m,Oa as c,ta as s}from"./chunk-JOUATK55.js";var r=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=s({type:o,selectors:[["app-mycourses"]],decls:2,vars:0,template:function(e,p){e&1&&(t(0,"p"),m(1,"mycourses works!"),n())},dependencies:[c],encapsulation:2})};export{r as Mycourses};

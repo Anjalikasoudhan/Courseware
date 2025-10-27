@@ -1,0 +1,1 @@
+import{Aa as r,Ba as i,Ca as n,Oa as s,ta as t}from"./chunk-JOUATK55.js";var p=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-userprofile"]],decls:2,vars:0,template:function(e,m){e&1&&(r(0,"p"),n(1,"userprofile works!"),i())},dependencies:[s],encapsulation:2})};export{p as Userprofile};

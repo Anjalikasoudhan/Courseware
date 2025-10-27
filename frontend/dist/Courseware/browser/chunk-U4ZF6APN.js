@@ -1,0 +1,1 @@
+import{Aa as m,Ba as n,Ca as p,Oa as a,ta as t}from"./chunk-JOUATK55.js";var c=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-welcomepage"]],decls:2,vars:0,template:function(e,l){e&1&&(m(0,"p"),p(1,"welcomepage works!"),n())},dependencies:[a],encapsulation:2})};export{c as Welcomepage};

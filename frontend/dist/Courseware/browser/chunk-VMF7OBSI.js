@@ -1,0 +1,1 @@
+import{Aa as o,Ba as s,Ca as p,Oa as n,ta as a}from"./chunk-JOUATK55.js";var r=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=a({type:e,selectors:[["app-approvalstatus"]],decls:2,vars:0,template:function(t,l){t&1&&(o(0,"p"),p(1,"approvalstatus works!"),s())},dependencies:[n],encapsulation:2})};export{r as Approvalstatus};
